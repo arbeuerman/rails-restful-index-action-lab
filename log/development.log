@@ -157,3 +157,45 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 273ms (Views: 266.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/students" for ::1 at 2021-04-05 20:07:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alexandrarodriguezbeuerman/Flatiron/code/rails_practice/rails-restful-index-action-lab/app/views/students/index.html.erb:1: syntax error, unexpected '|', expecting '}'
+...er.append=( @students.map do {|student| student.to_s } );@ou...
+...                              ^
+/Users/alexandrarodriguezbeuerman/Flatiron/code/rails_practice/rails-restful-index-action-lab/app/views/students/index.html.erb:1: syntax error, unexpected '}', expecting end
+...ap do {|student| student.to_s } );@output_buffer.safe_append...
+...                              ^
+/Users/alexandrarodriguezbeuerman/Flatiron/code/rails_practice/rails-restful-index-action-lab/app/views/students/index.html.erb:4: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/alexandrarodriguezbeuerman/Flatiron/code/rails_practice/rails-restful-index-action-lab/app/views/students/index.html.erb:6: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/students/index.html.erb:1: syntax error, unexpected '|', expecting '}'
+app/views/students/index.html.erb:1: syntax error, unexpected '}', expecting end
+app/views/students/index.html.erb:4: syntax error, unexpected ensure, expecting ')'
+app/views/students/index.html.erb:6: syntax error, unexpected end, expecting ')'
+  Rendering /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexandrarodriguezbeuerman/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+Started GET "/students" for ::1 at 2021-04-05 20:07:21 -0500
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 172ms (Views: 170.6ms | ActiveRecord: 0.6ms)
+
+
