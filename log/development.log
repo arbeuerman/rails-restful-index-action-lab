@@ -199,3 +199,20 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 172ms (Views: 170.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/students" for ::1 at 2021-04-05 20:10:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 168ms (Views: 161.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2021-04-05 20:10:18 -0500
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
